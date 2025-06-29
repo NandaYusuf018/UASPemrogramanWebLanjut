@@ -46,6 +46,8 @@
                 <li class="nav-item"><a class="nav-link" href="{{ route('penyewaans.index') }}">Penyewaan</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('detailsewas.index') }}">Detail Sewa</a></li>
                 <li class="nav-item"><a class="nav-link" href="{{ route('pembayarans.index') }}">Pembayaran</a></li>
+                <li class="nav-item ms-2"><a class="btn btn-outline-light" href="{{ route('login') }}">Login</a></li>
+                <li class="nav-item ms-2"><a class="btn btn-warning text-dark" href="{{ route('register') }}">Register</a></li>
             </ul>
         </div>
     </div>

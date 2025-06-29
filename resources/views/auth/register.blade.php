@@ -7,7 +7,7 @@
         <div class="card shadow-lg border-0" style="max-width: 400px; width: 100%;">
             <div class="card-body p-4">
                 <div class="text-center mb-4">
-                    <x-application-logo class="mb-2" style="width:56px; height:56px;" />
+                    {{-- <x-application-logo class="mb-2" style="width:56px; height:56px;" /> --}}
                     <h2 class="h4 fw-bold mb-1 text-primary">Register CRUD Sewa</h2>
                     <p class="text-muted small">Buat akun baru untuk melanjutkan</p>
                 </div>

@@ -44,5 +44,9 @@ Route::get('register', [RegisteredUserController::class, 'create'])->middleware(
 Route::post('register', [RegisteredUserController::class, 'store'])->middleware('guest');
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    $penyewaanCount = \App\Models\Penyewaan::count();
+    $pembayaranCount = \App\Models\Pembayaran::count();
+    $alatCount = \App\Models\Alat::count();
+    $detailSewaCount = \App\Models\detail_sewa::count();
+    return view('dashboard', compact('penyewaanCount', 'pembayaranCount', 'alatCount', 'detailSewaCount'));
 })->middleware(['auth'])->name('dashboard');
